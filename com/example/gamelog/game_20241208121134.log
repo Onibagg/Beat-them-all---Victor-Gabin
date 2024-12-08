@@ -1,0 +1,89 @@
+[12:11:34] Game started
+[12:11:34] Génération des cartes...
+[12:11:34] Cartes générées
+[12:11:34] Affichage des personnages disponibles...
+[12:11:34] Demande de choix de personnage
+[12:11:37] Personnage choisi: HITMAN
+[12:11:41] Niveau 1 lancé: Tour de Paris
+[12:11:41] Affichage de la carte
+[12:11:41] HITMAN est à la position 0 sur la carte.
+[12:11:41] Demande de déplacement
+[12:11:57] HITMAN avance.
+[12:11:57] HITMAN rencontre un Sniper !
+[12:11:57] HITMAN combat Sniper
+[12:12:00] HITMAN inflige 55 dégâts à Sniper
+[12:12:00] Sniper inflige 46 dégâts à HITMAN
+[12:12:00] HITMAN a vaincu Sniper
+[12:12:00] PV restants après le combat: 154
+[12:12:00] HITMAN est à la position 1 sur la carte.
+[12:12:00] Demande de déplacement
+[12:12:01] HITMAN avance.
+[12:12:01] HITMAN est à la position 2 sur la carte.
+[12:12:01] Demande de déplacement
+[12:12:03] HITMAN avance.
+[12:12:03] HITMAN est à la position 3 sur la carte.
+[12:12:03] Demande de déplacement
+[12:12:03] HITMAN avance.
+[12:12:03] HITMAN est à la position 4 sur la carte.
+[12:12:03] Demande de déplacement
+[12:12:04] HITMAN avance.
+[12:12:04] HITMAN a atteint la fin de la carte.
+[12:12:04] PV restants à la fin de la carte: 154
+[12:12:07] Passage au niveau 2: Tour de New York
+[12:12:07] HITMAN est à la position 0 sur la carte.
+[12:12:07] Demande de déplacement
+[12:12:09] HITMAN avance.
+[12:12:09] HITMAN est à la position 1 sur la carte.
+[12:12:09] Demande de déplacement
+[12:12:11] HITMAN avance.
+[12:12:11] HITMAN est à la position 2 sur la carte.
+[12:12:11] Demande de déplacement
+[12:12:12] HITMAN avance.
+[12:12:12] HITMAN est à la position 3 sur la carte.
+[12:12:12] Demande de déplacement
+[12:12:13] HITMAN avance.
+[12:12:13] HITMAN rencontre un Ennemi spécial !
+[12:12:13] HITMAN combat Ennemi spécial
+[12:12:14] HITMAN inflige 33 dégâts à Ennemi spécial
+[12:12:14] Ennemi spécial inflige 11 dégâts à HITMAN
+[12:12:14] HITMAN inflige 33 dégâts à Ennemi spécial
+[12:12:14] Ennemi spécial inflige 11 dégâts à HITMAN
+[12:12:14] HITMAN a vaincu Ennemi spécial
+[12:12:14] PV restants après le combat: 132
+[12:12:14] HITMAN est à la position 4 sur la carte.
+[12:12:14] Demande de déplacement
+[12:12:27] HITMAN avance.
+[12:12:27] HITMAN est à la position 5 sur la carte.
+[12:12:27] Demande de déplacement
+[12:12:28] HITMAN avance.
+[12:12:28] HITMAN est à la position 6 sur la carte.
+[12:12:28] Demande de déplacement
+[12:12:29] HITMAN avance.
+[12:12:29] HITMAN a atteint la fin de la carte.
+[12:12:29] PV restants à la fin de la carte: 132
+[12:12:33] Passage au niveau 3: Tour de Tokyo
+[12:12:33] HITMAN est à la position 0 sur la carte.
+[12:12:33] Demande de déplacement
+[12:12:35] HITMAN avance.
+[12:12:35] HITMAN rencontre un Sniper !
+[12:12:35] HITMAN combat Sniper
+[12:12:38] HITMAN inflige 41 dégâts à Sniper
+[12:12:38] Sniper inflige 34 dégâts à HITMAN
+[12:12:38] HITMAN a vaincu Sniper
+[12:12:38] PV restants après le combat: 98
+[12:12:38] HITMAN est à la position 1 sur la carte.
+[12:12:38] Demande de déplacement
+[12:12:40] HITMAN avance.
+[12:12:40] HITMAN est à la position 2 sur la carte.
+[12:12:40] Demande de déplacement
+[12:12:41] HITMAN avance.
+[12:12:41] HITMAN trouve un coffre !
+[12:12:42] HITMAN a décidé de ne pas ouvrir le coffre.
+[12:12:42] HITMAN est à la position 3 sur la carte.
+[12:12:42] Demande de déplacement
+[12:12:43] HITMAN avance.
+[12:12:43] HITMAN rencontre un CRS !
+[12:12:43] HITMAN combat CRS
+[12:12:45] HITMAN inflige 24 dégâts à CRS
+[12:12:45] CRS inflige 0 dégâts à HITMAN
+[12:12:45] HITMAN infl

@@ -1,0 +1,62 @@
+[12:21:04] Game started
+[12:21:04] Génération des cartes...
+[12:21:04] Cartes générées
+[12:21:04] Affichage des personnages disponibles...
+[12:21:04] Demande de choix de personnage
+[12:21:08] Personnage choisi: HITMAN
+[12:21:12] Niveau 1 lancé: Tour de Paris
+[12:21:12] Affichage de la carte
+[12:21:12] HITMAN est à la position 0 sur la carte.
+[12:21:12] Demande de déplacement
+[12:21:13] HITMAN avance.
+[12:21:13] HITMAN rencontre un Catcheur !
+[12:21:13] HITMAN combat Catcheur
+[12:21:14] HITMAN inflige 15 dégâts à Catcheur
+[12:21:14] Catcheur inflige 0 dégâts à HITMAN
+[12:21:14] HITMAN inflige 15 dégâts à Catcheur
+[12:21:14] Catcheur inflige 0 dégâts à HITMAN
+[12:21:14] HITMAN inflige 15 dégâts à Catcheur
+[12:21:14] Catcheur inflige 0 dégâts à HITMAN
+[12:21:14] HITMAN a vaincu Catcheur
+[12:21:14] PV restants après le combat: 200
+[12:21:14] HITMAN est à la position 1 sur la carte.
+[12:21:14] Demande de déplacement
+[12:21:16] HITMAN avance.
+[12:21:16] HITMAN rencontre un Brigant !
+[12:21:16] HITMAN combat Brigant
+[12:21:16] HITMAN inflige 45 dégâts à Brigant
+[12:21:16] Brigant inflige 17 dégâts à HITMAN
+[12:21:16] HITMAN a vaincu Brigant
+[12:21:16] PV restants après le combat: 183
+[12:21:16] HITMAN est à la position 2 sur la carte.
+[12:21:16] Demande de déplacement
+[12:21:23] HITMAN avance.
+[12:21:23] HITMAN rencontre un Brigant !
+[12:21:23] HITMAN combat Brigant
+[12:21:23] HITMAN inflige 38 dégâts à Brigant
+[12:21:23] Brigant inflige 0 dégâts à HITMAN
+[12:21:23] HITMAN a vaincu Brigant
+[12:21:23] PV restants après le combat: 183
+[12:21:23] HITMAN est à la position 3 sur la carte.
+[12:21:23] Demande de déplacement
+[12:21:27] HITMAN avance.
+[12:21:27] HITMAN rencontre un Catcheur !
+[12:21:27] HITMAN combat Catcheur
+[12:21:27] HITMAN inflige 53 dégâts à Catcheur
+[12:21:27] Catcheur inflige 15 dégâts à HITMAN
+[12:21:27] HITMAN inflige 53 dégâts à Catcheur
+[12:21:27] Catcheur inflige 15 dégâts à HITMAN
+[12:21:27] HITMAN inflige 53 dégâts à Catcheur
+[12:21:27] Catcheur inflige 15 dégâts à HITMAN
+[12:21:27] HITMAN a vaincu Catcheur
+[12:21:27] PV restants après le combat: 138
+[12:21:27] HITMAN est à la position 4 sur la carte.
+[12:21:27] Demande de déplacement
+[12:21:27] Choix de déplacement invalide
+[12:21:27] HITMAN est à la position 4 sur la carte.
+[12:21:27] Demande de déplacement
+[12:21:28] HITMAN avance.
+[12:21:28] HITMAN a atteint la fin de la carte.
+[12:21:28] PV restants à la fin de la carte: 138
+[12:21:29] Passage au niveau 2: Tour de New York
+[

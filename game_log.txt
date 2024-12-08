@@ -1,0 +1,2 @@
+[22:06:56] Hero rencontre un Brigant !
+[22:06:56] PV restants après le combat: 90

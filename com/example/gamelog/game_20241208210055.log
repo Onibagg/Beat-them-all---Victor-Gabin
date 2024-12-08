@@ -1,0 +1,58 @@
+[21:00:55] Game started
+[21:00:55] Génération des cartes...
+[21:00:55] Cartes générées
+[21:00:55] Affichage des personnages disponibles...
+[21:00:55] Demande de choix de personnage
+[21:01:57] Personnage choisi: GUERISSEUR
+[21:01:59] Niveau 1 lancé: Tour de Paris
+[21:01:59] Affichage de la carte
+[21:01:59] GUERISSEUR est à la position 0 sur la carte.
+[21:01:59] Demande de déplacement
+[21:02:00] GUERISSEUR avance.
+[21:02:00] GUERISSEUR est à la position 1 sur la carte.
+[21:02:00] Demande de déplacement
+[21:02:01] GUERISSEUR avance.
+[21:02:01] GUERISSEUR est à la position 2 sur la carte.
+[21:02:01] Demande de déplacement
+[21:02:01] GUERISSEUR avance.
+[21:02:01] GUERISSEUR trouve un coffre !
+[21:02:02] GUERISSEUR a décidé de ne pas ouvrir le coffre.
+[21:02:02] GUERISSEUR est à la position 3 sur la carte.
+[21:02:02] Demande de déplacement
+[21:02:03] GUERISSEUR avance.
+[21:02:03] GUERISSEUR est à la position 4 sur la carte.
+[21:02:03] Demande de déplacement
+[21:02:03] GUERISSEUR avance.
+[21:02:03] GUERISSEUR a atteint la fin de la carte.
+[21:02:03] PV restants à la fin de la carte: 300
+[21:02:05] Passage au niveau 2: Tour de New York
+[21:02:05] Position réinitialisée à 0
+[21:02:05] GUERISSEUR est à la position 0 sur la carte.
+[21:02:05] Demande de déplacement
+[21:02:11] GUERISSEUR avance.
+[21:02:11] GUERISSEUR rencontre un Catcheur !
+[21:02:11] GUERISSEUR combat Catcheur
+[21:02:13] GUERISSEUR inflige 5 dégâts à Catcheur
+[21:02:13] Catcheur inflige 55 dégâts à GUERISSEUR
+[21:02:14] GUERISSEUR inflige 5 dégâts à Catcheur
+[21:02:14] Catcheur inflige 55 dégâts à GUERISSEUR
+[21:02:14] GUERISSEUR inflige 5 dégâts à Catcheur
+[21:02:14] Catcheur inflige 55 dégâts à GUERISSEUR
+[21:02:14] GUERISSEUR inflige 5 dégâts à Catcheur
+[21:02:14] Catcheur inflige 55 dégâts à GUERISSEUR
+[21:02:14] GUERISSEUR inflige 5 dégâts à Catcheur
+[21:02:14] Catcheur inflige 55 dégâts à GUERISSEUR
+[21:02:14] GUERISSEUR a vaincu Catcheur
+[21:02:14] PV restants après le combat: 25
+[21:02:14] GUERISSEUR est à la position 1 sur la carte.
+[21:02:14] Demande de déplacement
+[21:02:15] GUERISSEUR avance.
+[21:02:15] GUERISSEUR rencontre un CRS !
+[21:02:15] GUERISSEUR combat CRS
+[21:02:15] GUERISSEUR inflige 5 dégâts à CRS
+[21:02:15] CRS inflige 15 dégâts à GUERISSEUR
+[21:02:15] GUERISSEUR inflige 5 dégâts à CRS
+[21:02:15] CRS inflige 15 dégâts à GUERISSEUR
+[21:02:15] GUERISSEUR a été vaincu par CRS
+[21:02:15] PV restants après le combat: -5
+[21:02:15] GUERISSEUR a été vaincu. Fin du jeu.
