@@ -1,0 +1,49 @@
+[22:55:14] Game started
+[22:55:14] Génération des cartes...
+[22:55:14] Cartes générées
+[22:55:14] Affichage des personnages disponibles...
+[22:55:14] Demande de choix de personnage
+[22:55:18] Personnage choisi: HITMAN
+[22:55:18] Affichage des niveaux disponibles
+[22:55:18] Demande de confirmation pour lancer le niveau
+[22:55:19] Choix invalide. Veuillez entrer 'o' pour lancer, 'n' pour ne pas lancer ou 'q' pour quitter.
+[22:55:19] Affichage des niveaux disponibles
+[22:55:19] Demande de confirmation pour lancer le niveau
+[22:55:21] Niveau 1 lancé: Tour de Paris
+[22:55:21] Affichage de la carte
+[22:55:21] HITMAN est à la position 0 sur la carte.
+[22:55:21] Demande de déplacement
+[22:55:22] HITMAN avance.
+[22:55:22] HITMAN est à la position 1 sur la carte.
+[22:55:22] Demande de déplacement
+[22:55:24] HITMAN avance.
+[22:55:24] HITMAN est à la position 2 sur la carte.
+[22:55:24] Demande de déplacement
+[22:55:25] HITMAN avance.
+[22:55:25] HITMAN est à la position 3 sur la carte.
+[22:55:25] Demande de déplacement
+[22:55:25] HITMAN avance.
+[22:55:25] HITMAN est à la position 4 sur la carte.
+[22:55:25] Demande de déplacement
+[22:55:26] HITMAN avance.
+[22:55:26] HITMAN a atteint la fin de la carte.
+[22:55:26] PV restants à la fin de la carte: 200
+[22:55:29] Passage au niveau 2: Tour de New York
+[22:55:29] Position réinitialisée à 0
+[22:55:29] HITMAN est à la position 0 sur la carte.
+[22:55:29] Demande de déplacement
+[22:55:29] HITMAN avance.
+[22:55:29] HITMAN rencontre un Catcheur !
+[22:55:31] HITMAN inflige 12 dégâts à Catcheur
+[22:55:31] Catcheur inflige 7 dégâts à HITMAN
+[22:55:37] HITMAN inflige 16 dégâts à Catcheur
+[22:55:37] Catcheur a été vaincu par HITMAN
+[22:55:37] PV restants après le combat: 193
+[22:55:37] HITMAN est à la position 1 sur la carte.
+[22:55:37] Demande de déplacement
+[22:55:47] HITMAN avance.
+[22:55:47] HITMAN est à la position 2 sur la carte.
+[22:55:47] Demande de déplacement
+[22:55:48] HITMAN avance.
+[22:55:48] HITMAN est à la position 3 sur la carte.
+[22:55:

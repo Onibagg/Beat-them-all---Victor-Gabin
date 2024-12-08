@@ -1,29 +1,15 @@
 package com.example.ennemis;
 
-import com.example.personnages.Personnage;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Ennemis {
     protected int pv;
+    protected String nom;
     protected int force;
     protected int defense;
     protected String arme;
-    protected String nom;
+    private boolean defending;
 
     public Ennemis(String nom) {
         this.nom = nom;
-    }
-
-    public static List<Ennemis> genererListeEnnemis() {
-        List<Ennemis> ennemis = new ArrayList<>();
-        ennemis.add(new Brigants("Brigant"));
-        ennemis.add(new Catcheurs("Catcheur"));
-        ennemis.add(new CRS("CRS"));
-        ennemis.add(new Sniper("Sniper"));
-        ennemis.add(new EnnemisSpeciaux("Ennemi Spécial"));
-        return ennemis;
     }
 
     public String getNom() {
@@ -38,12 +24,24 @@ public class Ennemis {
         this.pv = pv;
     }
 
+    public int getDefense() {
+        return defense;
+    }
+
     public int getForce() {
         return force;
     }
 
-    public int getDefense() {
-        return defense;
+    public boolean isDefending() {
+        return defending;
+    }
+
+    public void defendre() {
+        System.out.println(getNom() + " se défend.");
+        this.defending = true;
+    }
+
+    public void resetDefending() {
+        this.defending = false;
     }
 }
-

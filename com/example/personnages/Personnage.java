@@ -2,75 +2,78 @@ package com.example.personnages;
 
 import com.example.ennemis.Ennemis;
 import com.example.LogInit;
+import java.util.Random;
 import java.util.Scanner;
 
-public class Personnage {
-    int PV;
-    int force;
-    int defense;
-    String nom;
-    String arme;
-    public boolean capaciteUtilisee;
+public interface Personnage {
+    String getNom();
+    int getPV();
+    void setPV(int PV);
+    void utiliserCapaciteSpeciale();
+    void resetCapaciteUtilisee();
+    boolean isCapaciteUtilisee();
+    void utiliserCapacite();
 
-    public Personnage(String nom) {
-        this.nom = nom;
-        this.PV = 100; // Example initial value
-        this.force = 10; // Example initial value
-        this.defense = 5; // Example initial value
-        this.capaciteUtilisee = false; // Initialize to true at the beginning of each level
+    default void defendre() {
+        System.out.println(getNom() + " se défend.");
     }
 
-    public String getNom() {
-        return nom;
-    }
+    default void combattre(Ennemis ennemi, LogInit logInit, Scanner scanner, Random random) {
+        while (this.getPV() > 0 && ennemi.getPV() > 0) {
+            System.out.print("Voulez-vous attaquer (a) ou vous défendre (d) ? ");
+            String choix = scanner.next();
 
-    public int getPV() {
-        return PV;
-    }
+            boolean joueurDefend = false;
+            if (choix.equalsIgnoreCase("a")) {
+                if (!ennemi.isDefending()) {
+                    int degats = random.nextInt(20) + 1; // Random damage between 1 and 20
+                    ennemi.setPV(ennemi.getPV() - degats);
+                    logInit.logMaker(this.getNom() + " inflige " + degats + " dégâts à " + ennemi.getNom());
+                    System.out.println(this.getNom() + " inflige " + degats + " dégâts à " + ennemi.getNom());
+                } else {
+                    logInit.logMaker(this.getNom() + " attaque mais " + ennemi.getNom() + " se défend et ne prend aucun dégât.");
+                    System.out.println(this.getNom() + " attaque mais " + ennemi.getNom() + " se défend et ne prend aucun dégât.");
+                }
+            } else if (choix.equalsIgnoreCase("d")) {
+                this.defendre();
+                logInit.logMaker(this.getNom() + " se défend.");
+                joueurDefend = true;
+            } else {
+                System.out.println("Choix invalide. Veuillez entrer 'a' pour attaquer ou 'd' pour vous défendre.");
+                continue;
+            }
 
-    public void setPV(int PV) {
-        this.PV = PV;
-    }
-
-    public void utiliserCapaciteSpeciale() {
-        System.out.println("Capacité spéciale non définie pour " + nom);
-    }
-
-    public void combattre(Ennemis ennemi, LogInit logInit, Scanner scanner) {
-        logInit.logMaker(nom + " combat " + ennemi.getNom());
-        System.out.println(nom + " combat " + ennemi.getNom());
-        // Simple combat logic
-        while (this.PV > 0 && ennemi.getPV() > 0) {
-            // Ask if the user wants to use the special attack
-            if (this.capaciteUtilisee == false) {
-                System.out.print("Voulez-vous utiliser l'attaque spéciale (o/n) ? ");
-                String choix = scanner.next();
-                if (choix.equalsIgnoreCase("o")) {
-                    this.utiliserCapaciteSpeciale();
-                    this.capaciteUtilisee = true;
-                    continue; // Skip the normal attack
+            if (ennemi.getPV() > 0) {
+                if (random.nextBoolean()) {
+                    if (!joueurDefend) {
+                        int degats = random.nextInt(20) + 1; // Random damage between 1 and 20
+                        this.setPV(this.getPV() - degats);
+                        logInit.logMaker(ennemi.getNom() + " inflige " + degats + " dégâts à " + this.getNom());
+                        System.out.println(ennemi.getNom() + " inflige " + degats + " dégâts à " + this.getNom());
+                    } else {
+                        logInit.logMaker(ennemi.getNom() + " attaque mais " + this.getNom() + " se défend et ne prend aucun dégât.");
+                        System.out.println(ennemi.getNom() + " attaque mais " + this.getNom() + " se défend et ne prend aucun dégât.");
+                    }
+                } else {
+                    ennemi.defendre();
+                    logInit.logMaker(ennemi.getNom() + " se défend.");
                 }
             }
 
-            // Personnage attacks
-            int damageToEnnemi = Math.max(0, this.force - ennemi.getDefense());
-            ennemi.setPV(ennemi.getPV() - damageToEnnemi);
-            logInit.logMaker(nom + " inflige " + damageToEnnemi + " dégâts à " + ennemi.getNom());
-            System.out.println(nom + " inflige " + damageToEnnemi + " dégâts à " + ennemi.getNom());
+            // Afficher les PV après chaque coup
+            System.out.println(this.getNom() + " PV: " + this.getPV());
+            System.out.println(ennemi.getNom() + " PV: " + ennemi.getPV());
 
-            // Ennemi attacks
-            int damageToPersonnage = Math.max(0, ennemi.getForce() - this.defense);
-            this.PV -= damageToPersonnage;
-            logInit.logMaker(ennemi.getNom() + " inflige " + damageToPersonnage + " dégâts à " + nom);
-            System.out.println(ennemi.getNom() + " inflige " + damageToPersonnage + " dégâts à " + nom);
+            // Réinitialiser l'état de défense de l'ennemi après chaque tour
+            ennemi.resetDefending();
         }
 
-        if (this.PV <= 0) {
-            logInit.logMaker(nom + " a été vaincu par " + ennemi.getNom());
-            System.out.println(nom + " a été vaincu par " + ennemi.getNom());
-        } else {
-            logInit.logMaker(nom + " a vaincu " + ennemi.getNom());
-            System.out.println(nom + " a vaincu " + ennemi.getNom());
+        if (this.getPV() <= 0) {
+            logInit.logMaker(this.getNom() + " a été vaincu par " + ennemi.getNom());
+            System.out.println(this.getNom() + " a été vaincu par " + ennemi.getNom());
+        } else if (ennemi.getPV() <= 0) {
+            logInit.logMaker(ennemi.getNom() + " a été vaincu par " + this.getNom());
+            System.out.println(ennemi.getNom() + " a été vaincu par " + this.getNom());
         }
     }
 }

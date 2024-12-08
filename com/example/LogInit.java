@@ -1,20 +1,28 @@
 package com.example;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class LogInit {
-    private FileWriter writer;
+    public FileWriter writer;
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     public void initializeLog(String fileName) throws IOException {
-        writer = new FileWriter(fileName);
+        File file = new File(fileName);
+        if (file.getParentFile() != null) {
+            file.getParentFile().mkdirs(); // Create directories if they do not exist
+        }
+        writer = new FileWriter(file);
     }
 
     public void logMaker(String message) {
         try {
+            if (writer == null) {
+                throw new IllegalStateException("LogInit is not initialized. Call initializeLog() first.");
+            }
             String log = "[" + LocalDateTime.now().format(formatter) + "] " + message + "\n";
             writer.write(log);
             System.out.print(log);

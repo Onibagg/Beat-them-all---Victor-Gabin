@@ -7,12 +7,9 @@ TP COO - Jeu vidéo "Beat them all" - Victor Gillet &amp; Gabin Demé
 
 ## Idées
 
-+ si une attaque d'un ennemie il y a 10% de chance d'être l'attaque spéciale
-+ rechargement de l'attaque du perso principal et utilisation
-+ 1 interface
+Si on a le time // si une attaque d'un ennemie il y a 10% de chance d'être l'attaque spéciale
 + 5 tests unitaires
 + commentaires et javadoc
-
 
 + gestion du heal et des coups
 + gestion des attaques spéciales

@@ -1,0 +1,38 @@
+[22:49:45] Game started
+[22:49:45] Génération des cartes...
+[22:49:45] Cartes générées
+[22:49:45] Affichage des personnages disponibles...
+[22:49:45] Demande de choix de personnage
+[22:49:48] Personnage choisi: HITMAN
+[22:49:48] Affichage des niveaux disponibles
+[22:49:48] Demande de confirmation pour lancer le niveau
+[22:49:50] Niveau 1 lancé: Tour de Paris
+[22:49:50] Affichage de la carte
+[22:49:50] HITMAN est à la position 0 sur la carte.
+[22:49:50] Demande de déplacement
+[22:49:52] HITMAN avance.
+[22:49:52] HITMAN est à la position 1 sur la carte.
+[22:49:52] Demande de déplacement
+[22:49:54] HITMAN avance.
+[22:49:54] HITMAN est à la position 2 sur la carte.
+[22:49:54] Demande de déplacement
+[22:49:54] HITMAN avance.
+[22:49:54] HITMAN est à la position 3 sur la carte.
+[22:49:54] Demande de déplacement
+[22:49:55] HITMAN avance.
+[22:49:55] HITMAN trouve un coffre !
+[22:49:55] Debut gestion coffre
+[22:49:55] Demande d'ouverture ou non
+[22:49:57] HITMAN a décidé de ne pas ouvrir le coffre.
+[22:49:57] HITMAN est à la position 4 sur la carte.
+[22:49:57] Demande de déplacement
+[22:49:59] HITMAN avance.
+[22:49:59] HITMAN a atteint la fin de la carte.
+[22:49:59] PV restants à la fin de la carte: 200
+[22:50:03] Passage au niveau 2: Tour de New York
+[22:50:03] Position réinitialisée à 0
+[22:50:03] HITMAN est à la position 0 sur la carte.
+[22:50:03] Demande de déplacement
+[22:50:05] HITMAN avance.
+[22:50:05] HITMAN rencontre un Ennemi spécial !
+[22:50:08] HITMAN inflige 20 dégâts à Ennemi sp
