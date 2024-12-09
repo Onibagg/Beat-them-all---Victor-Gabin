@@ -1,0 +1,35 @@
+[19:26:59] Game started
+[19:26:59] Génération des cartes...
+[19:26:59] Cartes générées
+[19:26:59] Affichage des personnages disponibles...
+[19:26:59] Demande de choix de personnage
+[19:27:04] Personnage choisi: HITMAN
+[19:27:04] Affichage des niveaux disponibles
+[19:27:04] Demande de confirmation pour lancer le niveau
+[19:27:13] Niveau 1 lancé: Tour de Paris
+[19:27:13] Affichage de la carte
+[19:27:13] HITMAN est à la position 0 sur la carte.
+[19:27:13] Demande de déplacement
+[19:27:15] HITMAN avance.
+[19:27:15] HITMAN est à la position 1 sur la carte.
+[19:27:15] Demande de déplacement
+[19:27:16] HITMAN avance.
+[19:27:16] HITMAN est à la position 2 sur la carte.
+[19:27:16] Demande de déplacement
+[19:27:17] HITMAN avance.
+[19:27:17] HITMAN rencontre un Brigant (20 PV) !
+[19:27:17] Demande de choix d'action à attaque ou défense.
+[19:27:19] HITMAN inflige 10 dégâts à Brigant
+[19:27:19] Brigant inflige 15 dégâts à HITMAN
+[19:27:19] Demande de choix d'action à attaque ou défense.
+[19:27:23] HITMAN se défend.
+[19:27:23] Brigant attaque mais HITMAN se défend et réduit les dégâts.
+[19:27:23] Demande de choix d'action à attaque ou défense.
+[19:27:34] Brigant esquive l'attaque.
+[19:27:34] Demande de choix d'action à attaque ou défense.
+[19:27:37] Brigant esquive l'attaque.
+[19:27:37] Demande de choix d'action à attaque ou défense.
+[19:27:39] HITMAN inflige 10 dégâts à Brigant
+[19:27:39] Brigant a été vaincu par HITMAN
+[19:27:39] PV restants après le combat: 185
+[19:27:39] HITMAN est 

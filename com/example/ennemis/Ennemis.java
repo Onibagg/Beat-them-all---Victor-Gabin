@@ -1,5 +1,6 @@
 package com.example.ennemis;
 
+import com.example.LogInit;
 import com.example.personnages.Personnage;
 
 public class Ennemis {
@@ -13,6 +14,12 @@ public class Ennemis {
     public Ennemis(String nom) {
         this.nom = nom;
     }
+    public Ennemis(String nom, int force, int pv) {
+        this.nom = nom;
+        this.force = force;
+        this.pv= pv;
+    }
+
 
     public String getNom() {
         return nom;
@@ -26,10 +33,6 @@ public class Ennemis {
         this.pv = pv;
     }
 
-    public int getDefense() {
-        return defense;
-    }
-
     public int getForce() {
         return force;
     }
@@ -38,21 +41,15 @@ public class Ennemis {
         return defending;
     }
 
-    public void defendre() {
-        System.out.println(getNom() + " se défend.");
-        this.defending = true;
-    }
-
     public void resetDefending() {
         this.defending = false;
     }
 
-    public int attaquer(Personnage personnage) {
-        int degats = this.force - personnage.getDefense();
-        if (degats < 0) {
-            degats = 0; // Ensure no negative damage
-        }
-        personnage.setPV(personnage.getPV() - degats);
-        return degats;
+    public void attaquer(Personnage personnage, LogInit logInit) {
+        int degats = this.getForce();
+        int nouveauxPV = personnage.getPV() - degats;
+        personnage.setPV(Math.max(nouveauxPV, 0));
+        System.out.println(this.getNom() + " inflige " + degats + " dégâts à " + personnage.getNom());
+        logInit.logMaker(this.getNom() + " inflige " + degats + " dégâts à " + personnage.getNom());
     }
 }

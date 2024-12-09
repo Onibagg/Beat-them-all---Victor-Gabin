@@ -23,7 +23,10 @@ public class GameTests {
         //testResetCapaciteUtilisee(logInit); --> OK
         //testReculerAPositionZero(logInit); --> OK
         //testPourcentageApparitionSniper(logInit); --> OK
-        testCalculDegats(logInit);
+        //testCalculDegats(logInit); --> OK
+        //testAttackDamage(logInit); --> OK
+
+
 
         logInit.closeLog();
     }
@@ -97,41 +100,53 @@ public class GameTests {
     }
 
     public static void testCalculDegats(LogInit logInit) {
+        logInit.logMaker("Test de calcul des dégâts");
         Personnage personnage = new Creeper("TestCreeper");
         Ennemis ennemi = new Brigants("TestBrigant");
         Scanner scanner = new Scanner(System.in);
 
         // Initial PV of the character
         int initialPV = personnage.getPV();
-        System.out.println("PV initiaux du personnage: " + initialPV);
         logInit.logMaker("PV initiaux du personnage: " + initialPV);
 
         // Simulate the combat
         int totalDegats = 0;
         for (int i = 0; i < 3; i++) { // Simulate 3 attacks
-            int degats = ennemi.attaquer(personnage);
-            totalDegats += degats;
-            personnage.setPV(personnage.getPV() - degats);
-            System.out.println("Dégâts infligés par l'ennemi: " + degats);
-            logInit.logMaker("Dégâts infligés par l'ennemi: " + degats);
+            ennemi.attaquer(personnage, logInit);
+            totalDegats += ennemi.getForce();
         }
 
         // Calculate expected PV after the attacks
         int expectedPV = initialPV - totalDegats;
         int actualPV = personnage.getPV();
-        System.out.println("PV attendus après les attaques: " + expectedPV);
-        System.out.println("PV réels après les attaques: " + actualPV);
         logInit.logMaker("PV attendus après les attaques: " + expectedPV);
         logInit.logMaker("PV réels après les attaques: " + actualPV);
 
         // Verify if the actual PV matches the expected PV
         if (actualPV == expectedPV) {
-            System.out.println("testCalculDegats passed");
+            System.out.println("testCalculDegats passed ✅");
         } else {
-            System.out.println("testCalculDegats failed");
+            System.out.println("testCalculDegats failed ❌");
         }
 
         scanner.close();
+    }
+
+    public static void testAttackDamage(LogInit logInit) {
+        Creeper creeper = new Creeper("TestCreeper", 100, 100);
+        Brigants brigant = new Brigants("TestBrigant", 100, 100);
+
+        System.out.println("PV de l'ennemi avant l'attaque: " + brigant.getPV());
+
+        creeper.attaquer( brigant, 1,logInit);
+
+        System.out.println("PV de l'ennemi après l'attaque: " + brigant.getPV());
+
+        if (brigant.getPV() == 0) {
+            System.out.println("testAttackDamage passed");
+        } else {
+            System.out.println("testAttackDamage failed");
+        }
     }
 
 }

@@ -1,0 +1,36 @@
+[19:13:54] Game started
+[19:13:54] Génération des cartes...
+[19:13:54] Cartes générées
+[19:13:54] Affichage des personnages disponibles...
+[19:13:54] Demande de choix de personnage
+[19:13:56] Personnage choisi: HITMAN
+[19:13:56] Affichage des niveaux disponibles
+[19:13:56] Demande de confirmation pour lancer le niveau
+[19:13:58] Niveau 1 lancé: Tour de Paris
+[19:13:58] Affichage de la carte
+[19:13:58] HITMAN est à la position 0 sur la carte.
+[19:13:58] Demande de déplacement
+[19:14:00] HITMAN avance.
+[19:14:00] HITMAN est à la position 1 sur la carte.
+[19:14:00] Demande de déplacement
+[19:14:02] HITMAN avance.
+[19:14:02] HITMAN rencontre un CRS (36 PV) !
+[19:14:02] Demande de choix d'action à attaque ou défense.
+[19:14:04] HITMAN inflige 10 dégâts à CRS
+[19:14:04] CRS inflige 21 dégâts à HITMAN
+[19:14:04] Demande de choix d'action à attaque ou défense.
+[19:14:07] HITMAN inflige 10 dégâts à CRS
+[19:14:07] CRS n'attaque pas.
+[19:14:07] Demande de choix d'action à attaque ou défense.
+[19:14:15] HITMAN inflige 10 dégâts à CRS
+[19:14:15] CRS n'attaque pas.
+[19:14:15] Demande de choix d'action à attaque ou défense.
+[19:14:18] CRS esquive l'attaque.
+[19:14:18] CRS n'attaque pas.
+[19:14:18] Demande de choix d'action à attaque ou défense.
+[19:14:20] CRS esquive l'attaque.
+[19:14:20] CRS inflige 21 dégâts à HITMAN
+[19:14:20] Demande de choix d'action à attaque ou défense.
+[19:14:24] CRS esquive l'attaque.
+[19:14:24] CRS inflige 21 dégâts à HITMAN
+[19:14:24] Demande de choix d'actio

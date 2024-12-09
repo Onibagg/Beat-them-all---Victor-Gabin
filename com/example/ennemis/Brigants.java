@@ -8,7 +8,13 @@ public class Brigants extends Ennemis {
         Random rand = new Random();
         this.pv = rand.nextInt(100) + 1;
         this.force = rand.nextInt(50) + 1;
-        this.defense = rand.nextInt(30) + 1;
+        this.arme = "Couteau";
+    }
+
+    public Brigants(String nom, int force, int pv) {
+        super(nom);
+        this.pv = pv;
+        this.force = force;
         this.arme = "Couteau";
     }
 

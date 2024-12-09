@@ -1,0 +1,49 @@
+[19:20:10] Game started
+[19:20:10] Génération des cartes...
+[19:20:10] Cartes générées
+[19:20:10] Affichage des personnages disponibles...
+[19:20:10] Demande de choix de personnage
+[19:20:12] Personnage choisi: HITMAN
+[19:20:12] Affichage des niveaux disponibles
+[19:20:12] Demande de confirmation pour lancer le niveau
+[19:20:13] Niveau 1 lancé: Tour de Paris
+[19:20:13] Affichage de la carte
+[19:20:13] HITMAN est à la position 0 sur la carte.
+[19:20:13] Demande de déplacement
+[19:20:15] HITMAN avance.
+[19:20:15] HITMAN est à la position 1 sur la carte.
+[19:20:15] Demande de déplacement
+[19:20:17] HITMAN avance.
+[19:20:17] HITMAN rencontre un Brigant (85 PV) !
+[19:20:17] Demande de choix d'action à attaque ou défense.
+[19:20:19] Brigant esquive l'attaque.
+[19:20:19] Demande de choix d'action à attaque ou défense.
+[19:20:25] Brigant esquive l'attaque.
+[19:20:25] Demande de choix d'action à attaque ou défense.
+[19:20:26] HITMAN inflige 10 dégâts à Brigant
+[19:20:26] Brigant inflige 45 dégâts à HITMAN
+[19:20:26] Demande de choix d'action à attaque ou défense.
+[19:20:36] Brigant esquive l'attaque.
+[19:20:36] Demande de choix d'action à attaque ou défense.
+[19:20:39] Brigant esquive l'attaque.
+[19:20:39] Demande de choix d'action à attaque ou défense.
+[19:20:41] HITMAN inflige 10 dégâts à Brigant
+[19:20:41] Brigant inflige 45 dégâts à HITMAN
+[19:20:41] Demande de choix d'action à attaque ou défense.
+[19:20:42] Brigant esquive l'attaque.
+[19:20:42] Demande de choix d'action à attaque ou défense.
+[19:20:42] HITMAN inflige 10 dégâts à Brigant
+[19:20:42] Brigant inflige 45 dégâts à HITMAN
+[19:20:42] Demande de choix d'action à attaque ou défense.
+[19:20:43] Brigant esquive l'attaque.
+[19:20:43] Demande de choix d'action à attaque ou défense.
+[19:20:46] Brigant esquive l'attaque.
+[19:20:46] Demande de choix d'action à attaque ou défense.
+[19:20:47] HITMAN inflige 10 dégâts à Brigant
+[19:20:47] Brigant inflige 45 dégâts à HITMAN
+[19:20:47] Demande de choix d'action à attaque ou défense.
+[19:20:48] HITMAN inflige 10 dégâts à Brigant
+[19:20:48] Brigant inflige 45 dégâts à HITMAN
+[19:20:48] HITMAN a été vaincu par Brigant
+[19:20:48] PV restants après le combat: -25
+[19:20:48] HITMAN a été vaincu. Fin du jeu.

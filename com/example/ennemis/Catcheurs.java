@@ -12,7 +12,4 @@ public class Catcheurs extends Ennemis {
         this.arme = "Poings";
     }
 
-    public void comportementSpecifique() {
-        System.out.println("Catcheur a des PV élevés.");
-    }
 }

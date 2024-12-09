@@ -8,7 +8,6 @@ public class CRS extends Ennemis {
         Random rand = new Random();
         this.pv = rand.nextInt(120) + 1;
         this.force = rand.nextInt(60) + 1;
-        this.defense = rand.nextInt(40) + 1;
         this.arme = "Matraque";
     }
 

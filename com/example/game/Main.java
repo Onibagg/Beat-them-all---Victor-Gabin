@@ -19,7 +19,7 @@ public class Main {
     public static boolean[] niveauxTermines = new boolean[10]; // Initialize the array with a size of 10
 
     public static void main(String[] args) {
-        random = new Random(); // Initialize the random variable
+        random = new Random();
         LogInit logInit = new LogInit();
         try {
             String timecode = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
@@ -112,77 +112,86 @@ public class Main {
         }
         return true;
     }
+
+
     public static void jouerNiveau(Scanner scanner, LogInit logInit, Personnage personnage, List<Carte> mesCartes) {
-    int position = 0;
-    int currentLevel = 0;
+        int position = 0;
+        int currentLevel = 0;
 
-    while (currentLevel < mesCartes.size()) {
-        Carte carte = mesCartes.get(currentLevel);
-        int longueurParcours = carte.getLongueurParcours();
+        while (currentLevel < mesCartes.size()) {
+            Carte carte = mesCartes.get(currentLevel);
+            int longueurParcours = carte.getLongueurParcours();
 
-        while (position < longueurParcours) {
-            logInit.logMaker(personnage.getNom() + " est à la position " + position + " sur la carte.");
-            logInit.logMaker("Demande de déplacement");
-            System.out.print("Voulez-vous avancer (a) ou reculer (r) ? ");
-            String choix = scanner.next();
+            while (position < longueurParcours) {
+                logInit.logMaker(personnage.getNom() + " est à la position " + position + " sur la carte.");
+                logInit.logMaker("Demande de déplacement");
 
-            if (choix.equalsIgnoreCase("a")) {
-                position++;
-                System.out.println(personnage.getNom() + " avance.");
-                logInit.logMaker(personnage.getNom() + " avance.");
-            } else if (choix.equalsIgnoreCase("r")) {
-                position = Math.max(0, position - 1);
-                System.out.println(personnage.getNom() + " recule.");
-                logInit.logMaker(personnage.getNom() + " recule.");
-            } else {
-                System.out.println("Choix invalide. Veuillez entrer 'a' pour avancer ou 'r' pour reculer.");
-                logInit.logMaker("Choix de déplacement invalide");
-                continue;
+                if (position == 0) {
+                    System.out.print("Vous êtes au début de la carte, appuyez sur (a) pour avancer ! ");
+                } else {
+                    System.out.print("Voulez-vous avancer (a) ou reculer (r) ? ");
+                }
+
+                String choix = scanner.next();
+
+                if (choix.equalsIgnoreCase("a")) {
+                    position++;
+                    System.out.println(personnage.getNom() + " avance.");
+                    logInit.logMaker(personnage.getNom() + " avance.");
+                } else if (choix.equalsIgnoreCase("r") && position > 0) {
+                    position--;
+                    System.out.println(personnage.getNom() + " recule.");
+                    logInit.logMaker(personnage.getNom() + " recule.");
+                } else {
+                    System.out.println("Choix invalide. Veuillez entrer 'a' pour avancer" + (position > 0 ? " ou 'r' pour reculer." : "."));
+                    logInit.logMaker("Choix de déplacement invalide");
+                    continue;
+                }
+
+                gererRencontres(logInit, personnage, scanner);
             }
 
-            gererRencontres(logInit, personnage, scanner);
-        }
+            System.out.println(personnage.getNom() + " a atteint la fin de la carte.");
+            logInit.logMaker(personnage.getNom() + " a atteint la fin de la carte.");
+            System.out.println("PV restants à la fin de la carte: " + personnage.getPV());
+            logInit.logMaker("PV restants à la fin de la carte: " + personnage.getPV());
 
-        System.out.println(personnage.getNom() + " a atteint la fin de la carte.");
-        logInit.logMaker(personnage.getNom() + " a atteint la fin de la carte.");
-        System.out.println("PV restants à la fin de la carte: " + personnage.getPV());
-        logInit.logMaker("PV restants à la fin de la carte: " + personnage.getPV());
+            niveauxTermines[currentLevel] = true;
 
-        niveauxTermines[currentLevel] = true;
-
-        if (currentLevel < mesCartes.size() - 1) {
-            System.out.print("Voulez-vous passer au niveau suivant (o/n) ? ");
-            String choixNiveau = scanner.next();
-            if (choixNiveau.equalsIgnoreCase("o")) {
-                currentLevel++;
-                System.out.println("Vous allez passer au niveau " + (currentLevel + 1) + ": " + mesCartes.get(currentLevel).getNom());
-                logInit.logMaker("Passage au niveau " + (currentLevel + 1) + ": " + mesCartes.get(currentLevel).getNom());
-                position = 0; // Réinitialiser la position pour le niveau suivant
-                logInit.logMaker("Position réinitialisée à " + position);
-                personnage.resetCapaciteUtilisee(); // Réinitialiser la capacité utilisée pour le niveau suivant
+            if (currentLevel < mesCartes.size() - 1) {
+                System.out.print("Voulez-vous passer au niveau suivant (o/n) ? ");
+                String choixNiveau = scanner.next();
+                if (choixNiveau.equalsIgnoreCase("o")) {
+                    currentLevel++;
+                    System.out.println("Vous allez passer au niveau " + (currentLevel + 1) + ": " + mesCartes.get(currentLevel).getNom());
+                    logInit.logMaker("Passage au niveau " + (currentLevel + 1) + ": " + mesCartes.get(currentLevel).getNom());
+                    position = 0; // Réinitialiser la position pour le niveau suivant
+                    logInit.logMaker("Position réinitialisée à " + position);
+                    personnage.resetCapaciteUtilisee(); // Réinitialiser la capacité utilisée pour le niveau suivant
+                } else {
+                    break;
+                }
             } else {
+                System.out.println("Vous avez terminé tous les niveaux. Félicitations !");
+                logInit.logMaker(personnage.getNom() + " a terminé tous les niveaux.");
                 break;
             }
-        } else {
-            System.out.println("Vous avez terminé tous les niveaux. Félicitations !");
-            logInit.logMaker(personnage.getNom() + " a terminé tous les niveaux.");
-            break;
         }
     }
-}
+
 
     public static Ennemis selectionnerEnnemi() {
         int chance = random.nextInt(100);
-        if (chance < 40) {
+        if (chance < 45) {
             return new Brigants("Brigant");
-        } else if (chance < 60) {
+        } else if (chance < 65 &&  chance >= 45) {
             return new Catcheurs("Catcheur");
-        } else if (chance < 80) {
+        } else if (chance < 85 && chance >= 65) {
             return new CRS("CRS");
-        } else if (chance < 95) {
+        } else if (chance >= 85 ) {
             return new Sniper("Sniper");
         } else {
-            return new EnnemisSpeciaux("Ennemi spécial");
+            return new Brigants("Brigant");
         }
     }
 
@@ -210,7 +219,7 @@ public class Main {
         System.out.print("Voulez-vous ouvrir le coffre (o/n) ? ");
         String choix = scanner.next();
         if (choix.equalsIgnoreCase("o")) {
-            if (random.nextInt(100) < 50) { // 50% chance to get a heal
+            if (random.nextInt(100) < 50) { // 50% chance to get heal
                 int healAmount = random.nextInt(31) + 10; // Random heal amount between 10 and 40
                 personnage.setPV(personnage.getPV() + healAmount);
                 logInit.logMaker(personnage.getNom() + " a trouvé une potion de soin et récupère " + healAmount + " PV.");
