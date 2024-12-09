@@ -1,0 +1,38 @@
+[23:52:34] Game started
+[23:52:34] Génération des cartes...
+[23:52:34] Cartes générées
+[23:52:34] Bienvenue dans le jeu Beat them all ! 
+
+[23:52:34] Affichage des personnages disponibles...
+[23:52:34] Personnages disponibles :
+[23:52:34] 1. Hitman
+[23:52:34] 2. Creeper
+[23:52:34] 3. Guerisseur
+
+[23:52:34] Demande de choix de personnage
+[23:52:34] Choisissez votre personnage (1-3) : 
+[23:52:39] Personnage choisi: GUERISSEUR
+[23:52:39] Affichage des niveaux disponibles
+[23:52:39] Niveau 1: Tour de Paris
+[23:52:39] Demande de confirmation pour lancer le niveau
+[23:52:39] Voulez-vous lancer ce niveau (o/n) ou quitter (q) ? 
+[23:52:43] Niveau 1 lancé: Tour de Paris
+[23:52:43] Affichage de la carte
+[23:52:43] GUERISSEUR est à la position 0 sur la carte.
+[23:52:43] Demande de déplacement
+[23:52:43] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[23:52:45] GUERISSEUR avance.
+[23:52:45] GUERISSEUR est à la position 1 sur la carte.
+[23:52:45] Demande de déplacement
+[23:52:45] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:52:46] GUERISSEUR avance.
+[23:52:46] GUERISSEUR est à la position 2 sur la carte.
+[23:52:46] Demande de déplacement
+[23:52:46] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:52:47] GUERISSEUR avance.
+[23:52:47] GUERISSEUR est à la position 3 sur la carte.
+[23:52:47] Demande de déplacement
+[23:52:47] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:52:47] GUERISSEUR avance.
+[23:52:47] GUERISSEUR rencontre un CRS (27 PV) !
+[23:52:47] Demande de choix d'action à attaque ou défe

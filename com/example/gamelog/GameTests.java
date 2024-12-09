@@ -4,13 +4,23 @@ import com.example.personnages.*;
 import com.example.ennemis.*;
 import com.example.LogInit;
 import com.example.game.*;
+
 import java.io.IOException;
 import java.util.Scanner;
 
-import static com.example.game.Main.random;
+import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * La classe GameTests contient des méthodes de test pour vérifier le bon fonctionnement du jeu.
+ */
 public class GameTests {
 
+    /**
+     * Méthode principale pour exécuter les tests.
+     *
+     * @param args Les arguments de la ligne de commande.
+     */
     public static void main(String[] args) {
         LogInit logInit = new LogInit();
         try {
@@ -25,25 +35,29 @@ public class GameTests {
         //testPourcentageApparitionSniper(logInit); --> OK
         //testCalculDegats(logInit); --> OK
         //testAttackDamage(logInit); --> OK
-
-
+        //testPersonnageDiesBeforeFinishLine(logInit); --> OK
 
         logInit.closeLog();
     }
 
+    /**
+     * Teste si la position ne peut pas être inférieure à zéro.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
     public static void testReculerAPositionZero(LogInit logInit) {
         Personnage personnage = new Creeper("TestCreeper");
         Scanner scanner = new Scanner(System.in);
 
-        // Simulate the initial position at 0
+        // Simule la position initiale à 0
         int position = 0;
         System.out.println("Position avant tentative de recul: " + position);
         logInit.logMaker("Position avant tentative de recul: " + position);
-        // Try to move back when at position 0
+        // Tente de reculer lorsque la position est à 0
         try {
             position--;
             if (position < 0) {
-                position = 0; // Ensure position does not go below 0
+                position = 0; // Assure que la position ne descend pas en dessous de 0
             }
             System.out.println("Position après tentative de recul: " + position);
             logInit.logMaker("Position après tentative de recul: " + position);
@@ -61,17 +75,22 @@ public class GameTests {
     }
 
 
+    /**
+     * Teste si la capacité spéciale du personnage est correctement réinitialisée.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
     public static void testResetCapaciteUtilisee(LogInit logInit) {
         Personnage personnage = new Creeper("TestCreeper");
 
-        // Simulate using the special ability
+        // Simule l'utilisation de la capacité spéciale
         personnage.utiliserCapaciteSpeciale();
-        ((Creeper) personnage).capaciteUtilisee = true; // Manually set to true for testing
+        ((Creeper) personnage).capaciteUtilisee = true; // Défini manuellement à true pour le test
 
-        // Reset the special ability usage
+        // Réinitialise l'utilisation de la capacité spéciale
         personnage.resetCapaciteUtilisee();
 
-        // Check if the special ability usage has been reset
+        // Vérifie si l'utilisation de la capacité spéciale a été réinitialisée
         if (!personnage.isCapaciteUtilisee()) {
             System.out.println("testResetCapaciteUtilisee passed");
         } else {
@@ -79,6 +98,11 @@ public class GameTests {
         }
     }
 
+    /**
+     * Teste le pourcentage d'apparition du Sniper parmi les ennemis.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
     public static void testPourcentageApparitionSniper(LogInit logInit) {
         int totalTests = 1000;
         int sniperCount = 0;
@@ -99,30 +123,35 @@ public class GameTests {
         }
     }
 
+    /**
+     * Teste le calcul des dégâts infligés par un ennemi à un personnage.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
     public static void testCalculDegats(LogInit logInit) {
         logInit.logMaker("Test de calcul des dégâts");
         Personnage personnage = new Creeper("TestCreeper");
         Ennemis ennemi = new Brigants("TestBrigant");
         Scanner scanner = new Scanner(System.in);
 
-        // Initial PV of the character
+        // PV initiaux du personnage
         int initialPV = personnage.getPV();
         logInit.logMaker("PV initiaux du personnage: " + initialPV);
 
-        // Simulate the combat
+        // Simule le combat
         int totalDegats = 0;
-        for (int i = 0; i < 3; i++) { // Simulate 3 attacks
+        for (int i = 0; i < 3; i++) { // Simule 3 attaques
             ennemi.attaquer(personnage, logInit);
             totalDegats += ennemi.getForce();
         }
 
-        // Calculate expected PV after the attacks
+        // Calcule les PV attendus après les attaques
         int expectedPV = initialPV - totalDegats;
         int actualPV = personnage.getPV();
         logInit.logMaker("PV attendus après les attaques: " + expectedPV);
         logInit.logMaker("PV réels après les attaques: " + actualPV);
 
-        // Verify if the actual PV matches the expected PV
+        // Vérifie si les PV réels correspondent aux PV attendus
         if (actualPV == expectedPV) {
             System.out.println("testCalculDegats passed ✅");
         } else {
@@ -132,13 +161,18 @@ public class GameTests {
         scanner.close();
     }
 
+    /**
+     * Teste les dégâts d'attaque infligés par un Creeper à un Brigant.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
     public static void testAttackDamage(LogInit logInit) {
         Creeper creeper = new Creeper("TestCreeper", 100, 100);
         Brigants brigant = new Brigants("TestBrigant", 100, 100);
 
         System.out.println("PV de l'ennemi avant l'attaque: " + brigant.getPV());
 
-        creeper.attaquer( brigant, 1,logInit);
+        creeper.attaquer(brigant, 1, logInit);
 
         System.out.println("PV de l'ennemi après l'attaque: " + brigant.getPV());
 
@@ -149,4 +183,33 @@ public class GameTests {
         }
     }
 
+    /**
+     * Teste si le jeu se termine correctement lorsque le personnage meurt avant la ligne d'arrivée.
+     *
+     * @param logInit L'instance de LogInit pour enregistrer les logs.
+     */
+    public static void testPersonnageDiesBeforeFinishLine(LogInit logInit) {
+        try {
+            logInit.initializeLog("game_log.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+            fail("Failed to initialize log");
+        }
+
+        // Réinitialise le drapeau
+        Main.finirJeuCalled = false;
+
+        // Crée un héros avec des PV bas pour simuler la mort
+        Creeper personnage = new Creeper("Testpersonnage", 10, 100);
+        Brigants ennemi = new Brigants("Testennemi", 100, 100);
+
+        // Simule le combat jusqu'à ce que le héros meure
+        while (personnage.getPV() > 0) {
+            ennemi.attaquer(personnage, logInit);
+        }
+        Main.gererRencontres(logInit, personnage, new Scanner(System.in));
+
+        assertTrue(Main.finirJeuCalled, "Le jeu ne se termine pas correctement lorsque le personnage meurt");
+        logInit.closeLog();
+    }
 }

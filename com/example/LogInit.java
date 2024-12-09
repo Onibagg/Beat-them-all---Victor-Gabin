@@ -24,8 +24,10 @@ public class LogInit {
                 throw new IllegalStateException("LogInit is not initialized. Call initializeLog() first.");
             }
             String log = "[" + LocalDateTime.now().format(formatter) + "] " + message + "\n";
+            String logTerm = message + "\n";
+
             writer.write(log);
-            System.out.print(log);
+            System.out.print(logTerm);
         } catch (IOException e) {
             e.printStackTrace();
         }
