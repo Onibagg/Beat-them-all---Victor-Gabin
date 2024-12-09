@@ -76,4 +76,6 @@ public interface Personnage {
             System.out.println(ennemi.getNom() + " a été vaincu par " + this.getNom());
         }
     }
+
+    int getDefense();
 }

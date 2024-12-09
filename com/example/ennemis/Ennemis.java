@@ -1,5 +1,7 @@
 package com.example.ennemis;
 
+import com.example.personnages.Personnage;
+
 public class Ennemis {
     protected int pv;
     protected String nom;
@@ -43,5 +45,14 @@ public class Ennemis {
 
     public void resetDefending() {
         this.defending = false;
+    }
+
+    public int attaquer(Personnage personnage) {
+        int degats = this.force - personnage.getDefense();
+        if (degats < 0) {
+            degats = 0; // Ensure no negative damage
+        }
+        personnage.setPV(personnage.getPV() - degats);
+        return degats;
     }
 }

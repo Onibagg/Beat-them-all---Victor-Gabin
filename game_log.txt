@@ -1,0 +1,2 @@
+[12:41:58] Position avant tentative de recul: 0
+[12:41:58] Position après tentative de recul: 0
