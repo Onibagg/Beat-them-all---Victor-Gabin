@@ -1,0 +1,177 @@
+[23:54:12] Game started
+[23:54:12] Génération des cartes...
+[23:54:12] Cartes générées
+[23:54:12] Bienvenue dans le jeu Beat them all ! 
+
+[23:54:12] Affichage des personnages disponibles...
+[23:54:12] Personnages disponibles :
+[23:54:12] 1. Hitman
+[23:54:12] 2. Creeper
+[23:54:12] 3. Guerisseur
+
+[23:54:12] Demande de choix de personnage
+[23:54:12] Choisissez votre personnage (1-3) : 
+[23:54:14] Personnage choisi: GUERISSEUR
+[23:54:14] Affichage des niveaux disponibles
+[23:54:14] Niveau 1: Tour de Paris
+[23:54:14] Demande de confirmation pour lancer le niveau
+[23:54:14] Voulez-vous lancer ce niveau (o/n) ou quitter (q) ? 
+[23:54:18] Niveau 1 lancé: Tour de Paris
+[23:54:18] Affichage de la carte
+[23:54:18] GUERISSEUR est à la position 0 sur la carte.
+[23:54:18] Demande de déplacement
+[23:54:18] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[23:54:19] GUERISSEUR avance.
+[23:54:19] GUERISSEUR est à la position 1 sur la carte.
+[23:54:19] Demande de déplacement
+[23:54:19] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:20] GUERISSEUR avance.
+[23:54:20] GUERISSEUR est à la position 2 sur la carte.
+[23:54:20] Demande de déplacement
+[23:54:20] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:21] GUERISSEUR avance.
+[23:54:21] GUERISSEUR est à la position 3 sur la carte.
+[23:54:21] Demande de déplacement
+[23:54:21] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:22] GUERISSEUR avance.
+[23:54:22] GUERISSEUR trouve un coffre !
+[23:54:22] Debut gestion coffre
+[23:54:22] Demande d'ouverture ou non
+[23:54:22] Voulez-vous ouvrir le coffre (o/n) ? 
+[23:54:24] GUERISSEUR a trouvé une potion de soin et récupère 18 PV.
+[23:54:24] GUERISSEUR est à la position 4 sur la carte.
+[23:54:24] Demande de déplacement
+[23:54:24] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:27] GUERISSEUR avance.
+[23:54:27] GUERISSEUR a atteint la fin de la carte.
+[23:54:27] PV restants à la fin de la carte: 318
+[23:54:27] Voulez-vous passer au niveau suivant (o/n) ?
+[23:54:30] Passage au niveau 2: Tour de New York
+[23:54:30] Position réinitialisée à 0
+[23:54:30] GUERISSEUR est à la position 0 sur la carte.
+[23:54:30] Demande de déplacement
+[23:54:30] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[23:54:34] GUERISSEUR avance.
+[23:54:34] GUERISSEUR est à la position 1 sur la carte.
+[23:54:34] Demande de déplacement
+[23:54:34] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:35] GUERISSEUR avance.
+[23:54:35] GUERISSEUR est à la position 2 sur la carte.
+[23:54:35] Demande de déplacement
+[23:54:35] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:36] GUERISSEUR avance.
+[23:54:36] GUERISSEUR est à la position 3 sur la carte.
+[23:54:36] Demande de déplacement
+[23:54:36] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:37] GUERISSEUR avance.
+[23:54:37] GUERISSEUR trouve un coffre !
+[23:54:37] Debut gestion coffre
+[23:54:37] Demande d'ouverture ou non
+[23:54:37] Voulez-vous ouvrir le coffre (o/n) ? 
+[23:54:38] GUERISSEUR a trouvé une potion de soin et récupère 16 PV.
+[23:54:38] GUERISSEUR est à la position 4 sur la carte.
+[23:54:38] Demande de déplacement
+[23:54:38] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:40] GUERISSEUR avance.
+[23:54:40] GUERISSEUR rencontre un Brigant (46 PV) !
+[23:54:40] Demande de choix d'action à attaque ou défense.
+[23:54:40] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:42] GUERISSEUR attaque 5 fois et inflige 25 dégâts à Brigant
+[23:54:42] Brigant inflige 2 dégâts à GUERISSEUR
+[23:54:42] Demande de choix d'action à attaque ou défense.
+[23:54:42] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:44] GUERISSEUR attaque Brigant mais il l'esquive.
+[23:54:44] Demande de choix d'action à attaque ou défense.
+[23:54:44] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:45] GUERISSEUR attaque 4 fois et inflige 20 dégâts à Brigant
+[23:54:45] Brigant inflige 2 dégâts à GUERISSEUR
+[23:54:45] Demande de choix d'action à attaque ou défense.
+[23:54:45] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:46] GUERISSEUR attaque 2 fois et inflige 10 dégâts à Brigant
+[23:54:46] Brigant a été vaincu par GUERISSEUR
+[23:54:46] PV restants après le combat: 330
+[23:54:46] GUERISSEUR est à la position 5 sur la carte.
+[23:54:46] Demande de déplacement
+[23:54:46] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:51] GUERISSEUR avance.
+[23:54:51] GUERISSEUR rencontre un Brigant (12 PV) !
+[23:54:51] Demande de choix d'action à attaque ou défense.
+[23:54:51] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:52] GUERISSEUR attaque 4 fois et inflige 20 dégâts à Brigant
+[23:54:52] Brigant a été vaincu par GUERISSEUR
+[23:54:52] PV restants après le combat: 330
+[23:54:52] GUERISSEUR est à la position 6 sur la carte.
+[23:54:52] Demande de déplacement
+[23:54:52] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:54:53] GUERISSEUR avance.
+[23:54:53] GUERISSEUR rencontre un Catcheur (76 PV) !
+[23:54:53] Demande de choix d'action à attaque ou défense.
+[23:54:53] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:57] GUERISSEUR attaque Catcheur mais il l'esquive.
+[23:54:57] Demande de choix d'action à attaque ou défense.
+[23:54:57] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:58] GUERISSEUR attaque 3 fois et inflige 15 dégâts à Catcheur
+[23:54:58] Catcheur inflige 19 dégâts à GUERISSEUR
+[23:54:58] Demande de choix d'action à attaque ou défense.
+[23:54:58] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:54:59] GUERISSEUR attaque 3 fois et inflige 15 dégâts à Catcheur
+[23:54:59] Catcheur inflige 19 dégâts à GUERISSEUR
+[23:54:59] Demande de choix d'action à attaque ou défense.
+[23:54:59] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:55:00] GUERISSEUR attaque 2 fois et inflige 10 dégâts à Catcheur
+[23:55:00] Catcheur inflige 19 dégâts à GUERISSEUR
+[23:55:00] Demande de choix d'action à attaque ou défense.
+[23:55:00] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:55:01] GUERISSEUR attaque 1 fois et inflige 5 dégâts à Catcheur
+[23:55:01] Catcheur inflige 19 dégâts à GUERISSEUR
+[23:55:01] Demande de choix d'action à attaque ou défense.
+[23:55:01] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:55:01] GUERISSEUR attaque 4 fois et inflige 20 dégâts à Catcheur
+[23:55:01] Catcheur inflige 19 dégâts à GUERISSEUR
+[23:55:01] Demande de choix d'action à attaque ou défense.
+[23:55:01] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[23:55:02] GUERISSEUR attaque 5 fois et inflige 25 dégâts à Catcheur
+[23:55:02] Catcheur a été vaincu par GUERISSEUR
+[23:55:02] PV restants après le combat: 235
+[23:55:02] GUERISSEUR a atteint la fin de la carte.
+[23:55:02] PV restants à la fin de la carte: 235
+[23:55:02] Voulez-vous passer au niveau suivant (o/n) ?
+[23:55:04] Passage au niveau 3: Tour de Tokyo
+[23:55:04] Position réinitialisée à 0
+[23:55:04] GUERISSEUR est à la position 0 sur la carte.
+[23:55:04] Demande de déplacement
+[23:55:04] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[23:55:06] GUERISSEUR avance.
+[23:55:06] GUERISSEUR est à la position 1 sur la carte.
+[23:55:06] Demande de déplacement
+[23:55:06] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:55:07] GUERISSEUR avance.
+[23:55:07] GUERISSEUR trouve un coffre !
+[23:55:07] Debut gestion coffre
+[23:55:07] Demande d'ouverture ou non
+[23:55:07] Voulez-vous ouvrir le coffre (o/n) ? 
+[23:55:09] GUERISSEUR a décidé de ne pas ouvrir le coffre.
+[23:55:09] GUERISSEUR est à la position 2 sur la carte.
+[23:55:09] Demande de déplacement
+[23:55:09] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:55:09] GUERISSEUR avance.
+[23:55:09] GUERISSEUR est à la position 3 sur la carte.
+[23:55:09] Demande de déplacement
+[23:55:09] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:55:10] GUERISSEUR avance.
+[23:55:10] GUERISSEUR est à la position 4 sur la carte.
+[23:55:10] Demande de déplacement
+[23:55:10] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:55:11] GUERISSEUR avance.
+[23:55:11] GUERISSEUR est à la position 5 sur la carte.
+[23:55:11] Demande de déplacement
+[23:55:11] Voulez-vous avancer (a) ou reculer (r) ? 
+[23:55:12] GUERISSEUR avance.
+[23:55:12] GUERISSEUR trouve un coffre !
+[23:55:12] Debut gestion coffre
+[23:55:12] Demande d'ouverture ou non
+[23:55:12] Voulez-vous ouvrir le coffre (o/n) ? 
+[23:55:14] GUERISSEUR a décidé de ne pas ouvrir le coffre.
+[23:55:14] GUERISSEUR a atteint la fin de la carte.
+[23:55:14] PV restants à la fin de la carte: 235
+[23:55:14] Voulez-vous passer au niveau suivant (o/n) ?

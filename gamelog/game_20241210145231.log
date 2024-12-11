@@ -1,0 +1,137 @@
+[14:52:31] Game started
+[14:52:31] Génération des cartes...
+[14:52:31] Cartes générées
+[14:52:31] Bienvenue dans le jeu Beat them all ! 
+
+[14:52:31] Affichage des personnages disponibles...
+[14:52:31] Personnages disponibles :
+[14:52:31] 1. Hitman
+[14:52:31] 2. Creeper
+[14:52:31] 3. Guerisseur
+
+[14:52:31] Demande de choix de personnage
+[14:52:31] Choisissez votre personnage (1-3) : 
+[14:52:39] Personnage choisi: CREEPER
+[14:52:39] Affichage des niveaux disponibles
+[14:52:39] Niveau 1: Tour de Paris
+[14:52:39] Demande de confirmation pour lancer le niveau
+[14:52:39] Voulez-vous lancer ce niveau (o/n) ou quitter (q) ? 
+[14:52:45] Niveau 1 lancé: Tour de Paris
+[14:52:45] Affichage de la carte
+[14:52:45] CREEPER est à la position 0 sur la carte.
+[14:52:45] Demande de déplacement
+[14:52:45] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[14:52:52] CREEPER avance.
+[14:52:52] CREEPER rencontre un Brigant (74 PV) !
+[14:52:52] Demande de choix d'action à attaque ou défense.
+[14:52:52] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:09] CREEPER utilise sa capacité spéciale : Explosion !
+[14:53:09] CREEPER utilise sa capacité spéciale !
+[14:53:09] Brigant a été vaincu par CREEPER
+[14:53:09] PV restants après le combat: 150
+[14:53:09] CREEPER est à la position 1 sur la carte.
+[14:53:09] Demande de déplacement
+[14:53:09] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:16] CREEPER avance.
+[14:53:16] CREEPER trouve un coffre !
+[14:53:16] Debut gestion coffre
+[14:53:16] Demande d'ouverture ou non
+[14:53:16] Voulez-vous ouvrir le coffre (o/n) ? 
+[14:53:20] Le coffre trouvé par CREEPER est vide ou contient des objets inutiles.
+[14:53:20] CREEPER est à la position 2 sur la carte.
+[14:53:20] Demande de déplacement
+[14:53:20] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:24] CREEPER avance.
+[14:53:24] CREEPER est à la position 3 sur la carte.
+[14:53:24] Demande de déplacement
+[14:53:24] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:25] CREEPER avance.
+[14:53:25] CREEPER est à la position 4 sur la carte.
+[14:53:25] Demande de déplacement
+[14:53:25] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:26] CREEPER avance.
+[14:53:26] CREEPER rencontre un Catcheur (37 PV) !
+[14:53:26] Demande de choix d'action à attaque ou défense.
+[14:53:26] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:32] CREEPER attaque 4 fois et inflige 60 dégâts à Catcheur
+[14:53:32] Catcheur a été vaincu par CREEPER
+[14:53:32] PV restants après le combat: 150
+[14:53:32] CREEPER a atteint la fin de la carte.
+[14:53:32] PV restants à la fin de la carte: 150
+[14:53:32] Voulez-vous passer au niveau suivant (o/n) ?
+[14:53:38] Passage au niveau 2: Tour de New York
+[14:53:38] Position réinitialisée à 0
+[14:53:38] CREEPER est à la position 0 sur la carte.
+[14:53:38] Demande de déplacement
+[14:53:38] Vous êtes au début de la carte, appuyez sur (a) pour avancer !
+[14:53:43] CREEPER avance.
+[14:53:43] CREEPER rencontre un Catcheur (115 PV) !
+[14:53:43] Demande de choix d'action à attaque ou défense.
+[14:53:43] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:46] CREEPER attaque 2 fois et inflige 30 dégâts à Catcheur
+[14:53:46] Catcheur inflige 22 dégâts à CREEPER
+[14:53:46] Demande de choix d'action à attaque ou défense.
+[14:53:46] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:48] CREEPER attaque 3 fois et inflige 45 dégâts à Catcheur
+[14:53:48] Catcheur inflige 22 dégâts à CREEPER
+[14:53:48] Demande de choix d'action à attaque ou défense.
+[14:53:48] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:49] CREEPER attaque 2 fois et inflige 30 dégâts à Catcheur
+[14:53:49] Catcheur inflige 22 dégâts à CREEPER
+[14:53:49] Demande de choix d'action à attaque ou défense.
+[14:53:49] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:50] CREEPER attaque Catcheur mais il l'esquive.
+[14:53:50] Demande de choix d'action à attaque ou défense.
+[14:53:50] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:51] CREEPER attaque 4 fois et inflige 60 dégâts à Catcheur
+[14:53:51] Catcheur a été vaincu par CREEPER
+[14:53:51] PV restants après le combat: 84
+[14:53:51] CREEPER est à la position 1 sur la carte.
+[14:53:51] Demande de déplacement
+[14:53:51] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:53] CREEPER avance.
+[14:53:53] CREEPER est à la position 2 sur la carte.
+[14:53:53] Demande de déplacement
+[14:53:53] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:53:54] CREEPER avance.
+[14:53:54] CREEPER rencontre un CRS (101 PV) !
+[14:53:54] Demande de choix d'action à attaque ou défense.
+[14:53:54] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:54] CREEPER attaque 3 fois et inflige 45 dégâts à CRS
+[14:53:54] CRS inflige 53 dégâts à CREEPER
+[14:53:54] Demande de choix d'action à attaque ou défense.
+[14:53:54] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:56] CREEPER se défend.
+[14:53:56] CRS attaque mais CREEPER se défend.
+[14:53:56] Demande de choix d'action à attaque ou défense.
+[14:53:56] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:53:57] CREEPER attaque 5 fois et inflige 75 dégâts à CRS
+[14:53:57] CRS a été vaincu par CREEPER
+[14:53:57] PV restants après le combat: 31
+[14:53:57] CREEPER est à la position 3 sur la carte.
+[14:53:57] Demande de déplacement
+[14:53:57] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:54:02] CREEPER avance.
+[14:54:02] CREEPER est à la position 4 sur la carte.
+[14:54:02] Demande de déplacement
+[14:54:02] Voulez-vous avancer (a) ou reculer (r) ? 
+[14:54:02] CREEPER avance.
+[14:54:02] CREEPER rencontre un Catcheur (85 PV) !
+[14:54:02] Demande de choix d'action à attaque ou défense.
+[14:54:02] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:54:04] CREEPER se défend.
+[14:54:04] Catcheur attaque mais CREEPER se défend.
+[14:54:04] Demande de choix d'action à attaque ou défense.
+[14:54:04] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:54:06] CREEPER attaque Catcheur mais il l'esquive.
+[14:54:06] Demande de choix d'action à attaque ou défense.
+[14:54:06] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:54:07] CREEPER se défend.
+[14:54:07] Catcheur attaque mais CREEPER se défend.
+[14:54:07] Demande de choix d'action à attaque ou défense.
+[14:54:07] Voulez-vous attaquer (a), vous défendre (d) ou utiliser votre capacité spéciale (c) ? 
+[14:54:08] CREEPER attaque 2 fois et inflige 30 dégâts à Catcheur
+[14:54:08] Catcheur inflige 55 dégâts à CREEPER
+[14:54:08] CREEPER a été vaincu par Catcheur
+[14:54:08] PV restants après le combat: 0
+[14:54:08] Le jeu est terminé.
